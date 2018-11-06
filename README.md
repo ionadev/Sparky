@@ -12,3 +12,24 @@ alt="Discord server"></a>
     </p>
   </div>
 </div>
+
+---
+Sparky is a Multifuctional Discord Bot... The Only Bot You Will Ever Need
+
+
+---
+
+> The Bot is Under Development <br>
+
+## Developer
+>- Anish Shobith
+
+## Contributors
+>- iona dev <br>
+>- dr. sympathy <br>
+>- Exploit <br>
+>- Phunt <br>
+
+> © Sparky Discord Bot <br>
+> All Rights Reserved
+ 
