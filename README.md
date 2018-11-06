@@ -1,2 +1,7 @@
 # Sparky-Discord-Bot
-Offical Repo Of Sparky Discord Bot
+>Developers
+Anish Shobith
+>Contributors
+Iona Dev
+Tewberr
+Exploit
