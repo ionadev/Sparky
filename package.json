@@ -1,0 +1,27 @@
+{
+  "name": "sparky",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.0.1",
+    "chalk": "^2.4.1",
+    "cpu-stat": "^2.0.1",
+    "discord.js": "^11.4.2",
+    "enmap": "^4.3.2",
+    "forever-monitor": "^1.7.1",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2",
+    "ms": "^2.1.1",
+    "os": "^0.1.1",
+    "pm2": "^3.2.2",
+    "simple-youtube-api": "^5.0.2",
+    "snekfetch": "^4.0.4",
+    "ytdl-core": "^0.26.3"
+  }
+}
