@@ -1,7 +1,7 @@
 # Sparky-Discord-Bot
 >Developers
-Anish Shobith
+# Anish Shobith
 >Contributors
-Iona Dev
-Tewberr
-Exploit
+# Iona Dev
+# Tewberr
+# Exploit
