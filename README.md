@@ -8,10 +8,5 @@ alt="Issues"></a>
       <a href="https://discord.gg/6QJUM7R"><img src="https://img.shields.io/discord/502930687503106068.svg?logo=discord&style=for-the-badge&maxAge=300" 
 alt="Discord server"></a>
     </p>
-    <p align="center" style="margin:0;">
-      <a href="https://hub.docker.com/r/dougley/wildbeast"><img src="https://img.shields.io/docker/pulls/dougley/wildbeast.svg?style=for-the-badge&maxAge=300"></a>
-      <a href="https://circleci.com/gh/TheSharks/WildBeast"><img src="https://img.shields.io/circleci/project/github/TheSharks/WildBeast/master.svg?label=stable&style=for-the-badge&maxAge=300&logo=circleci" alt="CircleCI"></a>
-      <a href="https://circleci.com/gh/TheSharks/WildBeast/tree/experimental"><img src="https://img.shields.io/circleci/project/github/TheSharks/WildBeast/experimental.svg?label=experimental&style=for-the-badge&maxAge=300&logo=circleci" alt="CircleCI"></a>
-    </p>
   </div>
 </div>
