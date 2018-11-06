@@ -1,0 +1,13 @@
+{
+    "token": "<token>",
+    "PREFIX": "<prefix>",
+    "owner": "<owner id>",
+    "COLOR": "<hexa code>",
+    "stats": "<WATCHING/LISTENING/PLAYING>",
+    "status": "<online/idle/dnd>",
+    "version": "<version>",
+    "devs": [
+        "<Developer>"
+    ],
+    "youtubeapi": "<youtube api>"
+}
