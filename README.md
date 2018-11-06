@@ -9,14 +9,15 @@
 alt="Issues"></a>
       <a href="https://discord.gg/6QJUM7R"><img src="https://img.shields.io/discord/502930687503106068.svg?logo=discord&style=for-the-badge&maxAge=300" 
 alt="Discord server"></a>
+<a href ="https://github.com/Anish-Shobith/Sparky-Discord-Bot"><img src="https://img.shields.io/github/languages/top/Anish-Shobith/Sparky-Discord-Bot.svg?style=for-the-badge">
+<a href ="http://discord.js.org"><img src = "https://img.shields.io/badge/Discord.js-Version--Stable-blue.svg?longCache=true&style=for-the-badge">
+</a>
     </p>
   </div>
 </div>
 
 ---
 Sparky is a Multifuctional Discord Bot... The Only Bot You Will Ever Need
-
-
 ---
 
 > The Bot is Under Development <br>
