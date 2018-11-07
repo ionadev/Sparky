@@ -27,7 +27,7 @@ module.exports.run = (bot, message, args) => {// eslint-disable-line no-unused-v
          users: bot.emojis.find(e => e.name == "users"),
          cpuusgae: bot.emojis.find(e =>e.name == "cpuusage"),
          platform: bot.emojis.find(e => e.name == "platform")
-    }
+    };
  
 
     let botstatus;
