@@ -28,10 +28,7 @@ module.exports.run = (bot, message, args) => {// eslint-disable-line no-unused-v
          cpuusgae: bot.emojis.find(e =>e.name == "cpuusage"),
          platform: bot.emojis.find(e => e.name == "platform")
     }
-    let botonline = bot.user.presence.status === "online";
-    let botidle = bot.user.presence.status === "idle";
-    let botdnd = bot.user.presence.status === "dnd";
-
+ 
 
     let botstatus;
    // let status;
