@@ -20,7 +20,7 @@ let embed = new Discord.RichEmbed()
 .setDescription(results)
 .setTimestamp()
 .setColor("PURPLE")
-message.channel.send(embed)
+message.channel.send(embed);
 
 
 }
