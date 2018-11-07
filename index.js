@@ -35,6 +35,8 @@ loadCommands();
 
 // Message Event
 bot.on("message", async message => {
+
+//Made to not get the bot token while using eval command
     var tkn = "bot.token,token".split(",");
     for (i=0;i<tkn.length;i++) {
         if (message.content.toLowerCase().includes(tkn[i])) {
@@ -42,6 +44,7 @@ bot.on("message", async message => {
           return;
         }
     }
+//end of the token
 	if(message.author.bot) return;
 	if(message.channel.type === "dm") return;
 
@@ -70,7 +73,7 @@ bot.on('ready', () => {
 
 function setGame() {
     const set = () => {
-        bot.user.setActivity(`for ${botconfig.PREFIX}help`, {type:botconfig.stats}).catch(err => console.log(err));
+        bot.user.setActivity(`for ${botconfig.PREFIX}help ${bot.guild.size} Guilds and ${bot.users.size} Users`, {type:botconfig.stats}).catch(err => console.log(err));
     };
     set();
     setInterval(() => set(), 60 * 60000);
