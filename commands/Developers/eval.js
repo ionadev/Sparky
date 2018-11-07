@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
 const botconfig = require('../../botconfig.json');
 var tkn = "bot.token,token".split(",");
 module.exports.run = async (bot, message, args) => {
@@ -49,7 +49,7 @@ module.exports.run = async (bot, message, args) => {
           .addField(":outbox_tray: **OUTPUT**", "```" + clean(evaled) + "```")
           .setColor(0xFF5733)
           .setFooter(message.createdAt, message.author.avatarURL)
-          message.channel.send({embed})
+          message.channel.send(embed);
 
         } catch (err){
   
