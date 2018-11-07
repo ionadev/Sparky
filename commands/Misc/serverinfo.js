@@ -1,10 +1,11 @@
 const Discord = require('discord.js');
 module.exports.run = async (bot, message, args) => {
+
 let online = message.guild.members.filter(member => member.user.presence.status === 'online');
 let idle = message.guild.members.filter(member => member.user.presence.status === 'idle');
 let dnd = message.guild.members.filter(member => member.user.presence.status === 'dnd');
 let offline = message.guild.members.filter(member => member.user.presence.status === 'offline');
-let streaming = message.guild.members.filter(u => u.user.presence.game.streaming === true);
+
 let emoji = {
     red:  bot.emojis.find(e => e.name == "red"),
      green:  bot.emojis.find(e => e.name == "green"),
@@ -35,7 +36,6 @@ let sicon = message.guild.iconURL;
    .addField(emoji.yellow+" Idle :"+ idle.size, "**Idle Members**", true)
    .addField(emoji.red+" Dnd :"+ dnd.size, "**Dnd Members**", true)
    .addField(emoji.grey+" Offline :"+ offline.size, "**Offline Members**", true)
-   .addField(emoji.purple+"Streaming :"+ streaming.size, "**Streaming Members**", true)
    .addField(emoji.role+" Roles :"+ message.guild.roles.size, "**Roles In The Server**", true);
    message.channel.send(serverembed);
 }
