@@ -2,12 +2,18 @@ const Discord = require('discord.js');
 
 
     module.exports.run = (bot, message , args) => {
-        let anwsers = [
-            "No",
-            "Yes",
-            "Maybe",
-            "Try again later"
-        ]
+        let anwsers = ["Yes", 
+                       "No", 
+                       "I don't know", 
+                       "Ask again later!", 
+                       "Cyka", 
+                       "I am not sure!", 
+                       "Pls No", 
+                       "You tell me", 
+                       "Without a doubt", 
+                       "Cannot predict now", 
+                       "Without a doubt"];
+
     let results = anwsers[Math.floor(Math.random()*anwsers.length)]
 let embed = new Discord.RichEmbed()
 .setTitle(`${bot.user.username} 8 Ball`)
