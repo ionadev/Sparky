@@ -47,7 +47,7 @@ module.exports.run = async (bot, message, args) => {
           .addField(`${bot.user.username} JavaScript Eval Success:`+emoji.green, `** **`)
           .addField(":inbox_tray: **INPUT**", "```js" + args.join(" ") + "```")
           .addField(":outbox_tray: **OUTPUT**", "```" + clean(evaled) + "```")
-          .setColor(0xFF5733)
+          .setColor("#FF5733")
           .setFooter(message.createdAt, message.author.avatarURL)
           message.channel.send(embed);
 
