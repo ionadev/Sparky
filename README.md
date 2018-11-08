@@ -13,6 +13,8 @@ alt="Discord server"></a>
 <a href ="http://discord.js.org"><img src = "https://img.shields.io/badge/Discord.js-Version--Stable-blue.svg?longCache=true&style=for-the-badge">
 <a href="https://github.com/Sparky-Discord-Bot/Sparky"><img src="https://img.shields.io/github/issues-pr/Anish-Shobith/Sparky-Discord-Bot.svg?style=for-the-badge&maxAge=300"></a>
 <a href ="https://github.com/Sparky-Discord-Bot/Sparky"><img src = "https://img.shields.io/badge/Sparky Version-V 1.0.0-orange.svg?longCache=true&style=for-the-badge">
+<img src="https://img.shields.io/codacy/grade/bd1bcfddd7a546dba958a45b7843a6c9.svg?style=for-the-badge">
+
 
 </a>
     </p>
@@ -21,7 +23,7 @@ alt="Discord server"></a>
 
 ---
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/02f6a273149c4b2fa37b11e59efa478f)](https://app.codacy.com/app/Anish-Shobith/Sparky?utm_source=github.com&utm_medium=referral&utm_content=Sparky-Discord-Bot/Sparky&utm_campaign=Badge_Grade_Dashboard)
+
 
 
 Sparky is a Multifuctional Discord Bot... The Only Bot You Will Ever Need
