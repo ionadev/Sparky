@@ -1,10 +1,10 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
  module.exports.run = async (bot, message, args) => {
     let emojis = {
         rednetwork: bot.emojis.find(e => e.name == "rednetwork"),
         yellownetwork: bot.emojis.find(e => e.name == "yellownetwork"),
         greennetwork: bot.emojis.find(e => e.name == "greennetwork"),
-    }
+    };
     let color;
     
     let pingstatus;
