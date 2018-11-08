@@ -21,6 +21,8 @@ alt="Discord server"></a>
 
 ---
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/02f6a273149c4b2fa37b11e59efa478f)](https://app.codacy.com/app/Anish-Shobith/Sparky?utm_source=github.com&utm_medium=referral&utm_content=Sparky-Discord-Bot/Sparky&utm_campaign=Badge_Grade_Dashboard)
+
 
 Sparky is a Multifuctional Discord Bot... The Only Bot You Will Ever Need
 
