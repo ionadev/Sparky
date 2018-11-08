@@ -61,6 +61,14 @@ if (!message.content.startsWith(prefix)) return;
 });
 
 //End Of Message Event
+function setGame() {
+    const set = () => {
+        bot.user.setActivity(`for ${botconfig.PREFIX}help ${bot.guild.size} Guilds and ${bot.users.size} Users`, {type:botconfig.stats}).catch(err => console.log(err));
+    };
+    set();
+    setInterval(() => set(), 60 * 60000);
+    bot.user.setStatus(`${botconfig.status}`).catch(console.error);
+}
 
 bot.on('ready', () => { 
     setGame();
@@ -71,14 +79,6 @@ bot.on('ready', () => {
     console.log(chalk.green(`Sparky Prefix: ${botconfig.PREFIX}`));
 }); 
 
-function setGame() {
-    const set = () => {
-        bot.user.setActivity(`for ${botconfig.PREFIX}help ${bot.guild.size} Guilds and ${bot.users.size} Users`, {type:botconfig.stats}).catch(err => console.log(err));
-    };
-    set();
-    setInterval(() => set(), 60 * 60000);
-    bot.user.setStatus(`${botconfig.status}`).catch(console.error);
-}
 
 function getBotStats(status) {
     const stats = {
@@ -92,6 +92,7 @@ function getBotStats(status) {
         if (err) console.log(err)
     }); 
 }
+
 
 
 function closeApp() {
