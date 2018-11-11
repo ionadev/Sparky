@@ -25,6 +25,7 @@ alt="Discord server"></a>
 Sparky is a Multifuctional Discord Bot... The Only Bot You Will Ever Need
 
 ## Installation
+should be having git for installing 
 Only Setp Cool Right !!!
 Note: Only For Windows Users For Now For Others Comming Soon
 
