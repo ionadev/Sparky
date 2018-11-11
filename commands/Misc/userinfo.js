@@ -1,7 +1,7 @@
 //Define discord-js
 const Discord = require('discord.js');
 const moment = require("moment");
-
+const botconfig = require("../../botconfig.json");
 module.exports.run = async (bot, message, args) => {
 	let user;
     if (message.mentions.users.first()) {
@@ -23,7 +23,7 @@ module.exports.run = async (bot, message, args) => {
 		.addField("Bot:", `**${user.bot}**`, true)
 		.addField("Status:", `**${user.presence.status}**`, true)
 		.addField("Game:", `**${user.presence.game ? user.presence.game.name : 'None'}**`, true)
-        .addField("Roles:", `**${member.roles.map(roles => `${roles.name}`).join(', ')}**`, true)
+        	.addField("Roles:", `**${member.roles.map(roles => `${roles.name}`).join(', ')}**`, true)
 		.setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
      message.channel.send({embed});
     }
@@ -32,7 +32,7 @@ module.exports.command = {
     name: 'userinfo',
     permission: "none",
     description: `Shows the user info of mentioned username`,
-    usage: "userinfo",
+    usage: `${botconfig.PREFIX}userinfo,
     category: "MISC",
     enabled: true
 };
