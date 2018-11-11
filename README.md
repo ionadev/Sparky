@@ -23,10 +23,12 @@ alt="Discord server"></a>
 
 ---
 Sparky is a Multifuctional Discord Bot... The Only Bot You Will Ever Need
+
+## Installation
 Only Setp Cool Right !!!
 Note: Only For Windows Users For Now For Others Comming Soon
 
-Just Make A SparkyInstaller.cmd File and paste the code in it... 
+Just Make A `SparkyInstaller.cmd` File and paste the code in it... 
 ```
 @echo off
 echo [Sparky]: Cloning Project
