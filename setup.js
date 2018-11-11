@@ -14,7 +14,7 @@ let prompts = [
   {
     type: "input",
     name: "ownerID",
-    message: "Please enter the bot owner's User ID:"
+    message: "Please enter the bot owner's User ID ,[ Useful For Commands Like eval ]:"
   },
    {
     type: "input",
@@ -24,7 +24,7 @@ let prompts = [
    {
     type: "input",
     name: "botstatus",
-    message: "Please enter the bot stats (online, idle, dnd):"
+    message: "Please enter the bot stats (online, idle, dnd, offline):"
   },
    {
     type: "input",
