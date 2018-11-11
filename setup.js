@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 let baseConfig = fs.readFileSync("./setup_base.txt", "utf8");
+let botlauncher = fs.readFileSync("./botlauncher.txt", "utf8");
 
 let prompts = [
 
@@ -46,6 +47,8 @@ let prompts = [
 	 .replace("{{status}}", `"${answers.botstatus}"`)
 	 
   fs.writeFileSync("./botconfig.json", baseConfig);
+  fs.writeFileSync("./botlauncher.cmd", botlauncher);
   console.log("REMEMBER TO NEVER SHARE YOUR TOKEN WITH ANYONE!");
   console.log("Configuration has been written, enjoy!");
+  console.log("We Have Even Made a lanucher fo you lanuch using botlauncher.cmd")
 }());
