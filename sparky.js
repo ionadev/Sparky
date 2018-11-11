@@ -5,7 +5,7 @@ bot.commands = new Discord.Collection();
 const chalk = require('chalk');
 let commandSize = 0;
 const botconfig = require('./botconfig.json');
-hi
+
 //command handler
 const loadCommands = module.exports.loadCommands = (dir = "./commands/") => {
     fs.readdir(dir, (error, files) => {
