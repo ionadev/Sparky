@@ -60,4 +60,8 @@ process.on('SIGTERM', () => {
 closeApp();
 });
 
+// attach botconfig to client
+client.botconfig = botconfig;
+
+//login with meeaagikk
 bot.login(botconfig.token).catch(err => console.log(err));
