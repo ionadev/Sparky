@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 const errors = require("../../utils/errors.js");
+const botconfig = require("../../botconfig.json");
 
 module.exports.run = async (bot, message, args) => {
     if (!message.member.hasPermission(["ADMINISTRATOR"])) {
@@ -39,7 +40,7 @@ module.exports.command = {
     name: 'setwelcome',
     permission: "ADMINSTRATOR",
     description: "Sets Welcome Channel For Your Server",
-    usage: "setchannel",
+    usage: `${botconfig.PREFIX}setchannel`,
     category: "GUILD",
     enabled: true
 };
