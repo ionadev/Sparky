@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The Only Discord Bot You Need",
   "main": "sparky.js",
-   "scripts": {
+  "scripts": {
     "start": "node sparky.js",
     "prepublish": "node setup.js"
   },
@@ -19,9 +19,6 @@
     "superagent": "^4.0.0-beta.5"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Anish-Shobith/Sparky-Discord-Bot.git"
