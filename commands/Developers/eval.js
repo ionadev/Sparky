@@ -3,7 +3,7 @@ const botconfig = require('../../botconfig.json');
 var tkn = "bot.token,token".split(",");
 module.exports.run = async (bot, message, args) => {
 
-  if message.author.id !== botconfig.owner ) return;
+  if (message.author.id !== botconfig.owner ) return;
 
     function clean(text) {
       if (typeof(text) === "string")
@@ -13,7 +13,7 @@ module.exports.run = async (bot, message, args) => {
     }
   
  let argresult = args.join(' ');
- if(message.author.id !== botconfig.owner ) {
+ if (message.author.id !== botconfig.owner ) {
            // Check if user have Permissions to use the command
           message.channel.send('You Don\'t Have Permissions To Use This Command !'); // Send Message to the channel if they dont have permissions
           return; // Returns the code so the rest doesn't run
