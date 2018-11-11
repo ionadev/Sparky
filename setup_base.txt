@@ -2,8 +2,8 @@
   "owner": "{{owner}}",
   "token": {{token}},
   "stats": {{stats}},
-  "PREFIX": {{prefix}}
-  "status": {{status}}
+  "PREFIX": {{prefix}},
+  "status": {{status}},
   "version": "1.0.0",
     "devs": [
         "Anish Shobith#3265"
