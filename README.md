@@ -33,7 +33,7 @@ Just Make A `SparkyInstaller.cmd` File and paste the code in it...
 ```
 @echo off
 echo [Sparky]: Cloning Project
-git clone https://github.com/Sparky-Discord-Bot/Sparky
+git clone https://github.com/Sparky-Discord-Bot/Sparky.git
 cd Sparky 
 cls
 echo [Sparky]: Installing Packages
