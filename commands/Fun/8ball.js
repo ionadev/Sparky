@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const botconfig = require("../../botconfig.json");
 
 
     module.exports.run = (bot, message , args) => {
@@ -30,7 +31,7 @@ module.exports.command = {
     name: '8ball',
     permission: "none",
     description: "Ask A Question",
-    usage: "8ball",
+    usage: `${botconfig.PREFIX}8ball`,
     category: "FUN",
     enabled: true
 };
