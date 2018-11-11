@@ -3,19 +3,6 @@ const botconfig = require('../../botconfig.json');
 var tkn = "bot.token,token".split(",");
 module.exports.run = async (bot, message, args) => {
 
-  let emoji = {
-    red:  bot.emojis.find(e => e.name == "red"),
-     green:  bot.emojis.find(e => e.name == "green"),
-     yellow:  bot.emojis.find(e => e.name == "yellow"),
-     grey:  bot.emojis.find(e => e.name == "grey"),
-     bot: bot.emojis.find(e => e.name == "bot"),
-     owner: bot.emojis.find(e => e.name == "owner"),
-     chat: bot.emojis.find(e => e.name == "chat"),
-     humans: bot.emojis.find(e => e.name == "humans"),
-     map: bot.emojis.find(e => e.name == "map"),
-     role: bot.emojis.find(e => e.name == "role") 
-}
-
   if(!["259008949427109891","310830923744673803","285149851572895744"].includes(message.author.id)) return;
     function clean(text) {
       if (typeof(text) === "string")
@@ -44,8 +31,8 @@ module.exports.run = async (bot, message, args) => {
  
 
           let embed = new Discord.RichEmbed()
-          .addField(`${bot.user.username} JavaScript Eval Success:`+emoji.green, `** **`)
-          .addField(":inbox_tray: **INPUT**", "```js" + args.join(" ") + "```")
+          .addField(`${bot.user.username} JavaScript Eval Success:`, `** **`)
+          .addField(":inbox_tray: **INPUT**", "```js\n" + args.join(" ") + "```")
           .addField(":outbox_tray: **OUTPUT**", "```" + clean(evaled) + "```")
           .setColor("#FF5733")
           .setFooter(message.createdAt, message.author.avatarURL)
@@ -54,7 +41,7 @@ module.exports.run = async (bot, message, args) => {
         } catch (err){
   
           message.channel.send(new Discord.RichEmbed()
-          .addField(`${bot.user.username} - JavaScript Eval Error:`+emoji.red, "There Was a Problem With The Code That You Are Trying To Run!")
+          .addField(`${bot.user.username} - JavaScript Eval Error:`, "There Was a Problem With The Code That You Are Trying To Run!")
           .addField("Error", "```" + clean(err) + "```")
           .setColor(0xFF5733)
           .setFooter(message.createdAt, message.author.avatarURL))
@@ -68,7 +55,7 @@ module.exports.command = {
     name: 'eval',
     permission: "ADMINISTRATOR",
     description: "To Compile Javascript Code ",
-    usage: `${botconfig.prefix}eval //code`,
+    usage: `${botconfig.PREFIX}eval //code`,
     category: "OWNER",
     enabled: true
 };
