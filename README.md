@@ -9,7 +9,7 @@
 alt="Issues"></a>
  <a href="https://discord.gg/6QJUM7R"><img src="https://img.shields.io/discord/502930687503106068.svg?logo=discord&style=for-the-badge&maxAge=300" 
 alt="Discord server"></a>
-<a href ="https://github.com/Sparky-Discord-Bot/Sparky"><img src="https://img.shields.io/github/languages/top/Anish-Shobith/Sparky-Discord-Bot.svg?style=for-the-badge">
+<a href ="https://github.com/Sparky-Discord-Bot/Sparky"><img src="https://img.shields.io/github/languages/top/Sparky-Discord-Bot/Sparky.svg?style=for-the-badge">
 <a href ="http://discord.js.org"><img src = "https://img.shields.io/badge/Discord.js-Version--Stable-blue.svg?longCache=true&style=for-the-badge">
 <a href="https://github.com/Sparky-Discord-Bot/Sparky"><img src="https://img.shields.io/github/issues-pr/Anish-Shobith/Sparky-Discord-Bot.svg?style=for-the-badge&maxAge=300"></a>
 <a href ="https://github.com/Sparky-Discord-Bot/Sparky"><img src = "https://img.shields.io/badge/Sparky Version-V 1.0.0-orange.svg?longCache=true&style=for-the-badge">
