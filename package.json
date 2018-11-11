@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "The Only Discord Bot You Need",
   "main": "sparky.js",
+   "scripts": {
+    "start": "node sparky.js",
+    "prepublish": "node setup.js"
+  },
   "dependencies": {
     "chalk": "^2.4.1",
     "cpu-stat": "^2.0.1",
     "discord.js": "^11.4.2",
+    "inquirer": "^6.2.0",
     "moment": "^2.22.2",
     "moment-duration-format": "^2.2.2",
     "ms": "^2.1.1",
