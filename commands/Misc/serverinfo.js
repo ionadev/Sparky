@@ -31,5 +31,6 @@ module.exports.command = {
     permission: "none",
     description: "Show info about the serverinfo",
     usage: `${botconfig.PREFIX}serverinfo`,
+    category: "MISC",
     enabled: true
 };
