@@ -2,12 +2,10 @@
     "token": "<token>",
     "PREFIX": "<prefix>",
     "owner": "<owner id>",
-    "COLOR": "<hexa code>",
-    "stats": "<WATCHING/LISTENING/PLAYING>",
-    "status": "<online/idle/dnd>",
-    "version": "<version>",
+    "stats": "PLAYING",
+    "status": "online",
+    "version": "1.0.0",
     "devs": [
-        "<Developer>"
+        "Anish Shobith"
     ],
-    "youtubeapi": "<youtube api>"
 }
