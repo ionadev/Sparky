@@ -39,7 +39,7 @@ module.exports.run = async (bot, message) => {
 };
 module.exports.command = {
     name: 'help',
-    permission: "none";
+    permission: "none",
     description: `Gives Help Commands Of bot`,
     usage: `{botconfig.PREFIX}help`,
     category: "MISC",
