@@ -5,7 +5,6 @@
   "main": "sparky.js",
   "scripts": {
     "start": "node sparky.js",
-    "prepublish": "node setup.js"
   },
   "dependencies": {
     "chalk": "^2.4.1",
