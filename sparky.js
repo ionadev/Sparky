@@ -5,6 +5,28 @@ bot.commands = new Discord.Collection();
 const chalk = require('chalk');
 let commandSize = 0;
 const botconfig = require('./botconfig.json');
+//Sqlite3
+const sql = require("sqlite3");
+const db = new sql.Database("bot.sqlite");
+console.log("Initialized database connection.");
+
+//Tables
+const tables = {
+	welcomer: [
+		"welcomemsg TEXT NOT NULL",
+		"channel TEXT NOT NULL",
+		"guild TEXT NOT NULL"
+    ]
+};
+
+//Initialize DB
+for(let table in tables) {
+	db.run(`CREATE TABLE ${table} (${tables[table].join(", ")})`, () => {
+		console.log(`Initialized table "${table}".`);
+	});
+};
+
+bot.db = db;
 
 //command handler
 const loadCommands = module.exports.loadCommands = (dir = "./commands/") => {
