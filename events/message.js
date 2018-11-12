@@ -18,6 +18,6 @@ module.exports = async(bot, message) => {
 if (!message.content.startsWith(prefix)) return;
 
     let commandfile = bot.commands.get(command.slice(prefix.length));
-    if(commandfile) commandfile.run(bot,message,args);
+    commandfile ? commandfile.run(bot,message,args) : null;
 
 }
