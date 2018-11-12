@@ -26,7 +26,7 @@ module.exports = async (bot, commandSize) => {
             guilds: bot.guilds.size,
             users: bot.users.filter(f => !f.bot).size,
             commands: commandSize,
-            status: status ? status : 'Online';
+            status: status ? status : 'Online'
         };
     
         fs.writeFile('../botstats.json', JSON.stringify(stats, null, 2), null, err => {
