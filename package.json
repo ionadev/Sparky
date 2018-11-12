@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "The Only Discord Bot You Need",
   "main": "sparky.js",
-  "scripts": {
-    "start": "node sparky.js",
-  },
   "dependencies": {
     "chalk": "^2.4.1",
     "cpu-stat": "^2.0.1",
