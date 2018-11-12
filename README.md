@@ -55,13 +55,14 @@ After The Prompt Closes Use BotLanucher.cmd to start the bot if any problems ple
 > The Bot is Under Development <br>
 
 ## Developer
->- Anish Shobith
+>- Anish Shobith<br>
+>- iona dev 
 
 ## Contributors
->- iona dev <br>
 >- dr. sympathy <br>
 >- Exploit <br>
 >- Phunt <br>
+
 
 > © Sparky Discord Bot <br>
 > All Rights Reserved
