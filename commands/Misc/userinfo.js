@@ -32,7 +32,7 @@ module.exports.command = {
     name: 'userinfo',
     permission: "none",
     description: `Shows the user info of mentioned username`,
-    usage: `${botconfig.PREFIX}userinfo,
+    usage: `${botconfig.PREFIX}userinfo`,
     category: "MISC",
     enabled: true
 };
