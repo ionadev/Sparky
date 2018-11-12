@@ -36,6 +36,11 @@ module.exports.run = async (bot, message, args) => {
     }
 }
 
+/*con.run(`INSERT INTO welcomer (welcomemsg,channel,guild) VALUES (?, ?, ?, ?, ?)`, text , channel, message.guild.id, (err) => {
+		if(err) throw err;
+		message.channel.send("User warned.");
+	})
+}*/
 module.exports.command = {
     name: 'setwelcome',
     permission: "ADMINSTRATOR",
