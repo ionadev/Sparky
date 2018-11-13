@@ -1,6 +1,24 @@
 const Discord = require('discord.js');
 const botconfig = require("../../botconfig.json");
-module.exports.run = async (bot, message) => {
+module.exports.run = async (bot, message, arg) => {
+
+    if(args[0] == "help") return message.channel.send(`Just do ${prefix}help instead.`)
+
+ if(args[0]) {
+     let command = args[0];
+     if(bot.commands.has(command)) {
+         command = bot.commands.get(command);
+         let commandhelp = new Discord.RichEmbed()
+         .setColor("LIGHT_PURPLE")
+         .setAuthor(`${bot.user.username} ${command.command.name} help`)
+         .setThumbnail(bot.user.displayAvatarURL)
+         .setDescription(`**• Command Name:** ${command.command.name} \n \n **• Command Description:** ${command.command.description} \n \n **• Commamnd Permission:** ${command.command.permission} \n \n **• Command Usage:** ${command.command.usage}`)
+         .setFooter("Used On " + message.createdAt)
+message.channel.send(commandhelp);
+     }
+ }
+ if(!args[0]) {
+
     let owner = new Discord.RichEmbed()
     .setTitle("Owner COMMANDS")
     .setDescription(`${bot.user.username} Dev Comamnds`)  
@@ -34,7 +52,7 @@ module.exports.run = async (bot, message) => {
     message.channel.send(misc)
   
 
-
+ }
 
 };
 module.exports.command = {
