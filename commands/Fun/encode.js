@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const base64 = require("base-64");
 const utf8 = require("utf8");
-
+const botconfig = require("../../botconfig.json");
 module.exports.run = async (bot, message, args) => {
     message.delete();
     let t = args.join(" ");
@@ -15,7 +15,7 @@ module.exports.command = {
     name: 'encode',
     permission: "none",
     description:"encodes the  message",
-    usage: `encode`,
+    usage: `${botconfig.PREFIX}encode`,
     category: "FUN",
     enabled: true
 };
