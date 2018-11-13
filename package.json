@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "The Only Discord Bot You Need",
   "main": "sparky.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
+    "base-64": "^0.1.0",
     "chalk": "^2.4.1",
     "cpu-stat": "^2.0.1",
     "discord.js": "^11.4.2",
@@ -12,8 +16,8 @@
     "moment-duration-format": "^2.2.2",
     "ms": "^2.1.1",
     "os": "^0.1.1",
-    "sqlite3": "^4.0.4",
-    "superagent": "^4.0.0-beta.5"
+    "superagent": "^4.0.0-beta.5",
+    "utf8": "^3.0.0"
   },
   "devDependencies": {},
   "repository": {
