@@ -56,7 +56,7 @@ message.channel.send(commandhelp);
     .setColor("BLUE")
     .setThumbnail("https://i.imgur.com/8ObZIQl.png")
     bot.commands.filter(cmd => cmd.command.category === "QUERIES").map(cmd => misc.addField(cmd.command.name , `**${cmd.command.description}**`))
-    message.channel.send(misc)
+    message.channel.send(queries)
 
  }
 
