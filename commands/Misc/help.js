@@ -50,7 +50,13 @@ message.channel.send(commandhelp);
     .setThumbnail("https://i.imgur.com/8ObZIQl.png")
     bot.commands.filter(cmd => cmd.command.category === "MISC").map(cmd => misc.addField(cmd.command.name , `**${cmd.command.description}**`))
     message.channel.send(misc)
-  
+  let queries = new Discord.RichEmbed()
+    .setTitle("Queries COMMANDS")
+    .setDescription(`${bot.user.username} Queries Commands`) 
+    .setColor("BLUE")
+    .setThumbnail("https://i.imgur.com/8ObZIQl.png")
+    bot.commands.filter(cmd => cmd.command.category === "QUERIES").map(cmd => misc.addField(cmd.command.name , `**${cmd.command.description}**`))
+    message.channel.send(misc)
 
  }
 
