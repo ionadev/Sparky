@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const botconfig = require("../../botconfig.json");
-module.exports.run = async (bot, message, arg) => {
+module.exports.run = async (bot, message, args) => {
 
     if(args[0] == "help") return message.channel.send(`Just do ${prefix}help instead.`)
 
@@ -33,7 +33,7 @@ message.channel.send(commandhelp);
     .setColor("BLUE")
     .setThumbnail("https://i.imgur.com/vjQ7RUU.png")
     bot.commands.filter(cmd => cmd.command.category === "FUN").map(cmd => fun.addField(cmd.command.name , `**${cmd.command.description}**`))
-    message.channel.send(fun)
+    message.channel.send(fun);
 
     let guild = new Discord.RichEmbed()
     .setTitle("Guild COMMANDS")
@@ -41,7 +41,7 @@ message.channel.send(commandhelp);
     .setColor("BLUE")
     .setThumbnail("https://i.imgur.com/SuDr9pf.png")
     bot.commands.filter(cmd => cmd.command.category === "GUILD").map(cmd => guild.addField(cmd.command.name , `**${cmd.command.description}**`))
-    message.channel.send(guild)
+    message.channel.send(guild);
 
     let misc = new Discord.RichEmbed()
     .setTitle("Misc COMMANDS")
@@ -49,14 +49,15 @@ message.channel.send(commandhelp);
     .setColor("BLUE")
     .setThumbnail("https://i.imgur.com/8ObZIQl.png")
     bot.commands.filter(cmd => cmd.command.category === "MISC").map(cmd => misc.addField(cmd.command.name , `**${cmd.command.description}**`))
-    message.channel.send(misc)
+    message.channel.send(misc);
+
   let queries = new Discord.RichEmbed()
     .setTitle("Queries COMMANDS")
     .setDescription(`${bot.user.username} Queries Commands`) 
     .setColor("BLUE")
     .setThumbnail("https://i.imgur.com/8ObZIQl.png")
-    bot.commands.filter(cmd => cmd.command.category === "QUERIES").map(cmd => misc.addField(cmd.command.name , `**${cmd.command.description}**`))
-    message.channel.send(queries)
+    bot.commands.filter(cmd => cmd.command.category === "QUERIES").map(cmd => queries.addField(cmd.command.name , `**${cmd.command.description}**`))
+    message.channel.send(queries);
 
  }
 
