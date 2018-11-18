@@ -3,7 +3,6 @@ const fs = require('fs');
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
 const chalk = require('chalk');
-let commandSize = 0;
 const botconfig = require('./botconfig.json');
 
 //command handler
@@ -22,7 +21,6 @@ const loadCommands = module.exports.loadCommands = (dir = "./commands/") => {
             let props = require(`${dir}${file}`);
 
             bot.commands.set(props.command.name, props);
-            commandSize++;
 
             if (props.command.aliases) props.command.aliases.forEach(alias => {
                 if (bot.commands.get(alias)) return console.log(`Conflict with alias: ${alias}`);
