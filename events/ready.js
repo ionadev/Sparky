@@ -2,12 +2,12 @@ const Discord = require('discord.js');
 const fs = require('fs');
 const chalk = require('chalk');
 const botconfig = require("../botconfig.json");
-module.exports = async (bot, commandSize) => {
+module.exports = async (bot) => {
     
     
         setGame();
         getBotStats();
-        console.log(chalk.blue(`Bot has started, with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} guilds, ${bot.users.size} members, and ${commandSize} commands!`)); 
+        console.log(chalk.blue(`Bot has started, with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} guilds, ${bot.users.size} members, and ${bot.commands.size} commands!`)); 
         console.log(chalk.green(`Sparky Version: ${botconfig.version}`));
         console.log(chalk.blue(`Sparky Developers:${botconfig.devs}`));
         console.log(chalk.green(`Sparky Prefix: ${botconfig.PREFIX}`));
@@ -25,7 +25,7 @@ module.exports = async (bot, commandSize) => {
         const stats = {
             guilds: bot.guilds.size,
             users: bot.users.filter(f => !f.bot).size,
-            commands: commandSize,
+            commands: bot.commands.size,
             status: status ? status : 'Online'
         };
     
