@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const base64 = require("base-64");
 const utf8 = require("utf8");
-const botconfig = require("../../botconfig.json");
+
 module.exports.run = async (bot, message, args) => {
     message.delete();
     let t = args.join(" ");
@@ -9,13 +9,13 @@ module.exports.run = async (bot, message, args) => {
     let b = base64.decode(t);
     let u = utf8.decode(b);
     message.channel.send(u);
-}
+};
 
 module.exports.command = {
     name: '\decode',
     permission: "none",
     description:"decodes the encoded message",
-    usage: `${botconfig.PREFIX}decode`,
+    usage: `decode`,
     category: "FUN",
     enabled: true
 };
