@@ -49,6 +49,14 @@ message.channel.send(commandhelp);
     .setThumbnail("https://i.imgur.com/8ObZIQl.png");
     bot.commands.filter(cmd => cmd.command.category === "MISC").map(cmd => misc.addField(cmd.command.name , `**${cmd.command.description}**`));
     message.channel.send(misc);
+
+  let economy = new Discord.RichEmbed()
+    .setTitle("Economy COMMANDS")
+    .setDescription(`${bot.user.username} Economy Commands`) 
+    .setColor("BLUE")
+    .setThumbnail("https://i.imgur.com/8ObZIQl.png");
+    bot.commands.filter(cmd => cmd.command.category === "ECONOMY").map(cmd => economy.addField(cmd.command.name , `**${cmd.command.description}**`));
+    message.channel.send(economy);
 }
 };
 
