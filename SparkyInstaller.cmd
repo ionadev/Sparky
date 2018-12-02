@@ -66,6 +66,8 @@ ECHO [Sparky]: Please enter the BotStatus:
 SET /P STATUS="[User]: "
 ECHO [Sparky]: Please enter the BotStats:
 SET /P STATS="[User]: "
+ECHO [Sparky]: Please enter the dblapi token(optional <just press enter>):
+SET /P dbl="[User]: "
 :BOTCONFIG
 (
   ECHO {
@@ -77,7 +79,8 @@ SET /P STATS="[User]: "
     ECHO "version": "1.0.0",
     ECHO "devs": [
     ECHO    "Anish Shobith#3265"
-    ECHO ]
+    ECHO ],
+    ECHO "dbl":"%dbl%"
     ECHO }
     ) > botconfig.json
     ECHO [Sparky]: Done.
