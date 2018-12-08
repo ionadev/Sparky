@@ -6,7 +6,6 @@ bot.aliases = new Discord.Collection();
 const chalk = require('chalk');
 const botconfig = require('./botconfig.json');
 
-//command handler
 const loadCommands = module.exports.loadCommands = (dir = "./commands/") => {
     fs.readdir(dir, (error, files) => {
         if (error) return console.log(error);
@@ -29,35 +28,7 @@ const loadCommands = module.exports.loadCommands = (dir = "./commands/") => {
         });
     });
 };
-loadCommands();/*
-
-function load(dir) {
-    fs.readdir(dir, (err, files) => {
-        if (err) console.log(err);
-        let jsfile = files.filter(f => f.split(".").pop() === "js");
-        if (jsfile.length <= 0) return console.log("Couldn't find commands.");
-
-        jsfile.forEach((f, i) => {
-            delete require.cache[require.resolve(`${dir}${f}`)];
-            let props = require(`${dir}${f}`);
-            console.log(`${f} loaded!`);
-            bot.commands.set(props.command.name, props);
-            if (props.command.aliases) props.command.aliases.forEach(alias => {
-                bot.aliases.get(alias, props.command.name);
-            });
-        });
-    });
-}
-
-load("./commands/Developers/");
-load("./commands/Economy/");
-load("./commands/Fun/");
-load("./commands/Guild/");
-load("./commands/Misc/");
-load("./commands/Moderation/");
-load("./commands/Queries/");
-load("./commands/Support/");
-*/
+loadCommands();
 
     fs.readdir("./events/", (err, files) => {
         if (err) return console.error(err);
