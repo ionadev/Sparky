@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const fs = require('fs');
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
+bot.aliases = new Discord.Collection();
 const chalk = require('chalk');
 const botconfig = require('./botconfig.json');
 
@@ -22,14 +23,41 @@ const loadCommands = module.exports.loadCommands = (dir = "./commands/") => {
 
             bot.commands.set(props.command.name, props);
 
-            if (props.command.aliases) props.command.aliases.forEach(alias => {
-                if (bot.commands.get(alias)) return console.log(`Conflict with alias: ${alias}`);
-                bot.commands.set(alias, props)
+            if (props.command.aliases)  props.command.aliases.forEach(alias => {
+                bot.aliases.set(alias, props.command.name);
             });
         });
     });
 };
-loadCommands();
+loadCommands();/*
+
+function load(dir) {
+    fs.readdir(dir, (err, files) => {
+        if (err) console.log(err);
+        let jsfile = files.filter(f => f.split(".").pop() === "js");
+        if (jsfile.length <= 0) return console.log("Couldn't find commands.");
+
+        jsfile.forEach((f, i) => {
+            delete require.cache[require.resolve(`${dir}${f}`)];
+            let props = require(`${dir}${f}`);
+            console.log(`${f} loaded!`);
+            bot.commands.set(props.command.name, props);
+            if (props.command.aliases) props.command.aliases.forEach(alias => {
+                bot.aliases.get(alias, props.command.name);
+            });
+        });
+    });
+}
+
+load("./commands/Developers/");
+load("./commands/Economy/");
+load("./commands/Fun/");
+load("./commands/Guild/");
+load("./commands/Misc/");
+load("./commands/Moderation/");
+load("./commands/Queries/");
+load("./commands/Support/");
+*/
 
     fs.readdir("./events/", (err, files) => {
         if (err) return console.error(err);
@@ -58,8 +86,4 @@ process.on('SIGTERM', () => {
 closeApp();
 });
 
-// attach botconfig to client
-bot.botconfig = botconfig;
-
-//login with meeaagikk
 bot.login(botconfig.token).catch(err => console.log(err));
