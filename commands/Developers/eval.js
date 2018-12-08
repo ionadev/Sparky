@@ -2,8 +2,9 @@ const Discord = require('discord.js');
 const botconfig = require("../../botconfig.json");
 module.exports.run = async (bot, message, args) => {
 
+let owner = bot.users.get(botconfig.owner).username;
 
-  if(![botconfig.owner].includes(message.author.id)) return;
+  if(![botconfig.owner].includes(message.author.id)) return message.channel.send(`${message.author.username} This commmand can be only used by ${owner}`);
     function clean(text) {
       if (typeof(text) === "string")
         return text.replace(/'/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
@@ -44,12 +45,11 @@ module.exports.run = async (bot, message, args) => {
         }
 
 };
-//Exporting command
 module.exports.command = {
-    name: 'eval',
+    name: 'Eval',
     permission: "ADMINISTRATOR",
     description: "To Compile Javascript Code ",
-    usage: `eval //code`,
+    usage: "```eval [JavaScript code]```",
     category: "OWNER",
     enabled: true
 };
