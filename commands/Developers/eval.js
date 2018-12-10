@@ -27,8 +27,8 @@ let owner = bot.users.get(botconfig.owner).username;
 
           let embed = new Discord.RichEmbed()
           .addField(`${bot.user.username} JavaScript Eval Success:`, `** **`)
-          .addField(":inbox_tray: **INPUT**", "```js\n" + args.join(" ") + "```")
-          .addField(":outbox_tray: **OUTPUT**", "```" + clean(evaled) + "```")
+          .addField(":inbox_tray: **INPUT**", `\`\`\`js\n${args.join(" ")}\`\`\``)
+          .addField(":outbox_tray: **OUTPUT**", `\`\`\`${clean(evaled)}\`\`\``)
           .setColor(0xFF5733)
           .setFooter(message.createdAt, message.author.avatarURL);
           message.channel.send({embed});
